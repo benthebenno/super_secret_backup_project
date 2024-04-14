@@ -142,8 +142,8 @@ def main():
             rep = pygame.transform.scale(replacement, (90, 90))
             screen.blit(rep, (coor(squirrel.x),coor(squirrel.y)))
             pygame.display.update()
-            print("Squirrel x:"+str(squirrel.x))
-            print("Squirrel y:"+str(squirrel.y))
+            #print("Squirrel x:"+str(squirrel.x))
+            #print("Squirrel y:"+str(squirrel.y))
             
             
             #This if will check if a Squirrel is on a bomb
@@ -153,6 +153,7 @@ def main():
                 screen.blit(explosion, (0,0))
                 pygame.display.update()
                 print("boo hooo")
+                print("Well Done")
                 time.sleep(4)
                 pygame.quit()
                 quit()
@@ -171,7 +172,7 @@ def main():
                     screen.blit(temp_image, (coor(squirrel.x),coor(squirrel.y)))
                     
                     
-                    print("Squirrel y changed:"+str(squirrel.y))
+                    #print("Squirrel y changed:"+str(squirrel.y))
 
                 if key == "s":
                     temp_image_not_scaled = pygame.image.load(squirrel_file)
@@ -245,7 +246,7 @@ def main():
                     if squirrel.x>9:
                         squirrel.x=0
                     screen.blit(temp_image, (coor(squirrel.x),coor(squirrel.y))) 
-            print("squirrel number "+str(squirrel.num)+" squirrel square ("+str(squirrel.x)+','+str(squirrel.y)+")")
+            #print("squirrel number "+str(squirrel.num)+" squirrel square ("+str(squirrel.x)+','+str(squirrel.y)+")")
                     
           
             pygame.display.update()
